@@ -1,0 +1,254 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+/* Logo And Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 55px;
+    margin: 3px 6px;
+}
+
+/* List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(180, 180, 180);
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#home h1{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+/* services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    font-family: 'Open Sans', sans-serif;
+    width: 23%;
+    padding: 34px;
+    margin: 3px 6px;
+}
+#services .box img{
+    height: 100px;
+   margin: auto;
+   display: block;
+}
+
+/* Clients Section */
+
+#client-section{
+    position: relative;
+    height: 300px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../bg2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clients img{
+    height: 150px;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../bg1.jpg) no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+#contact-box button{
+    width: 20%;
+    display: block;
+    margin-left: 300px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-primary1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.8rem;
+}
+
+.h-primary2{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+.h-primary3{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    margin: 18px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+#btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 12px;
+}
